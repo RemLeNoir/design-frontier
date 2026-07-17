@@ -1,0 +1,28 @@
+id: polaris
+name: Shopify Polaris
+kind: design-system
+status: reviewed
+last_reviewed: 2026-07-16
+summary: Commerce operations, resource lists, contextual actions and merchant feedback patterns.
+covers_layers:
+  application_shell: 0.75
+  navigation: 0.76
+  tables: 0.84
+  forms: 0.84
+  feedback: 0.9
+recommended_for:
+- crm-commercial
+- commerce-operations
+- saas-operational-dense
+avoid_for:
+- editorial-marketing-only
+- developer-documentation
+boundaries:
+- Use operational patterns without inheriting Shopify-specific vocabulary.
+- Contextual actions must remain predictable outside commerce workflows.
+- Resource-list cards should not replace tables when comparison is primary.
+evidence:
+- title: Shopify Polaris
+  url: https://polaris.shopify.com/
+  type: primary
+recipes: {}

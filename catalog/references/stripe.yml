@@ -1,0 +1,51 @@
+id: stripe
+name: Stripe
+kind: brand
+status: reviewed
+last_reviewed: 2026-07-16
+summary: Trust-sensitive forms, developer communication and technical product storytelling.
+covers_layers:
+  forms: 0.94
+  documentation: 0.92
+  marketing_site: 0.84
+  feedback: 0.75
+  brand: 0.62
+recommended_for:
+- developer-tool
+- technical-b2b-landing
+- financial-workflow
+avoid_for:
+- playful-child-oriented-product
+- dense-table-primary-product
+boundaries:
+- Use trust and clarity patterns without copying payment-specific semantics.
+- Decorative gradients belong to marketing surfaces, not operational forms by default.
+- Documentation density must remain appropriate for the user's expertise.
+evidence:
+- title: Stripe Elements
+  url: https://stripe.com/payments/elements
+  type: primary
+- title: Stripe Documentation
+  url: https://docs.stripe.com/
+  type: primary
+recipes:
+  forms:
+    principles:
+    - Reduce ambiguity before submission.
+    requirements:
+    - Group fields by decision, not database model.
+    - Keep labels persistent and examples specific.
+    - Preserve entered values after validation failure.
+    - Place validation beside the affected field.
+    prohibitions:
+    - Do not use placeholder text as the only label.
+    - Do not defer format requirements until submission.
+    components:
+      form-section:
+      - Use a heading and optional short explanation.
+      text-field:
+      - Reserve helper text space to avoid layout jumps.
+    metrics:
+      control_height: 40px
+      field_gap: 16px
+      section_gap: 32px

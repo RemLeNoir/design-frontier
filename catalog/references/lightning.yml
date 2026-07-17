@@ -1,0 +1,48 @@
+id: lightning
+name: Salesforce Lightning Design System
+kind: design-system
+status: reviewed
+official_design_system: true
+last_reviewed: '2026-07-16'
+summary: CRM and enterprise record workflows, dense forms, object detail, status and action patterns.
+covers_layers:
+  application_shell: 0.82
+  navigation: 0.84
+  tables: 0.84
+  forms: 0.92
+  feedback: 0.88
+  accessibility: 0.8
+recommended_for:
+- crm-commercial
+- saas-operational-dense
+- document-portal
+avoid_for:
+- simple-consumer-app
+- editorial-landing
+boundaries:
+- Do not inherit Salesforce object terminology or branding.
+- Record detail layouts are suitable only when entities and relationships are central.
+- Action density must be reduced for novice audiences.
+evidence:
+- title: Salesforce Lightning Design System
+  url: https://www.lightningdesignsystem.com/
+  type: primary
+recipes:
+  application_shell:
+    requirements:
+    - Apply Salesforce Lightning Design System only within the application shell layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.
+  navigation:
+    requirements:
+    - Apply Salesforce Lightning Design System only within the navigation layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.
+  tables:
+    requirements:
+    - Apply Salesforce Lightning Design System only within the tables layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.

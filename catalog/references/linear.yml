@@ -1,0 +1,46 @@
+id: linear
+name: Linear
+kind: brand
+status: reviewed
+last_reviewed: 2026-07-16
+summary: Restrained product interface with controlled density, low visual noise and workflow-first navigation.
+covers_layers:
+  navigation: 0.92
+  density: 0.9
+  application_shell: 0.78
+  feedback: 0.7
+  marketing_site: 0.68
+recommended_for:
+- developer-tool
+- saas-operational-dense
+- technical-b2b-landing
+avoid_for:
+- image-heavy-commerce
+- guided-public-service
+boundaries:
+- Do not transfer marketing headline scale into the application.
+- Do not assume its issue-tracking interaction model fits every domain.
+- Low visual noise must not reduce discoverability for novice users.
+evidence:
+- title: Linear product site
+  url: https://linear.app/
+  type: primary
+- title: Linear UI redesign article
+  url: https://linear.app/blog/how-we-redesigned-the-linear-ui
+  type: primary
+recipes:
+  navigation:
+    principles:
+    - Optimize repeated keyboard-driven work.
+    requirements:
+    - Keep location and selected state obvious.
+    - Use command access for cross-product navigation when the product is module-heavy.
+    - Preserve navigation geometry between routes.
+    prohibitions:
+    - Do not introduce route-specific navigation structures.
+    metrics:
+      nav_item_height: 32px
+  density:
+    requirements:
+    - Prefer compact rows and restrained decoration.
+    - Use whitespace to separate decisions, not to inflate every block.

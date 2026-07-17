@@ -1,0 +1,38 @@
+version: 2
+precedence:
+- accessibility
+- project_constraints
+- component_behavior
+- layer_reference
+- brand
+layers:
+- id: brand
+  description: Shared identity and semantic color roles.
+- id: typography
+  description: Font families, scale, reading widths and hierarchy.
+- id: layout
+  description: Grid, widths, page rhythm and containment.
+- id: application_shell
+  description: Persistent app frame, sidebar, header and work area.
+- id: navigation
+  description: Information architecture, wayfinding and hierarchy.
+- id: density
+  description: Information density, rhythm and visual noise.
+- id: tables
+  description: Tabular data, filtering, selection and bulk actions.
+- id: forms
+  description: Data entry, validation, help and trust-sensitive tasks.
+- id: data_visualization
+  description: Charts, metrics and analytical composition.
+- id: feedback
+  description: Loading, empty, success, warning and error states.
+- id: marketing_site
+  description: Public storytelling, conversion and product presentation.
+- id: documentation
+  description: Technical reading, examples and information navigation.
+- id: accessibility
+  description: Inclusive interaction, semantics and service clarity.
+- id: motion
+  description: Transition purpose, duration and reduced-motion behavior.
+- id: mobile
+  description: Touch, narrow-screen navigation and responsive task priority.

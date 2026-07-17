@@ -1,0 +1,48 @@
+id: metronic
+name: Metronic
+kind: framework
+status: reviewed
+last_reviewed: 2026-07-16
+summary: Modular administrative shell with broad backoffice component coverage.
+covers_layers:
+  application_shell: 0.95
+  navigation: 0.82
+  density: 0.72
+  tables: 0.72
+  forms: 0.7
+  feedback: 0.65
+recommended_for:
+- saas-operational-dense
+- crm-commercial
+- executive-dashboard
+avoid_for:
+- editorial-marketing-only
+- minimal-consumer-app
+boundaries:
+- Use as structural reference, not as permission to ship every available widget.
+- Do not inherit demo-page visual clutter or oversized cards.
+- Remove unused navigation levels and decorative dashboard blocks.
+evidence:
+- title: Metronic official site
+  url: https://keenthemes.com/metronic
+  type: primary
+- title: Metronic Tailwind documentation
+  url: https://keenthemes.com/metronic/tailwind/docs/
+  type: primary
+recipes:
+  application_shell:
+    requirements:
+    - Keep global navigation stable between modules.
+    - Provide a predictable page header region for title, context and primary actions.
+    - Allow dense content to use the available viewport width.
+    prohibitions:
+    - Do not nest multiple decorative dashboard cards without information hierarchy.
+    components:
+      sidebar:
+      - Support expanded and collapsed states without losing accessible names.
+      page-header:
+      - Keep primary action aligned consistently across pages.
+    metrics:
+      sidebar_expanded: 256px
+      sidebar_collapsed: 72px
+      content_gutter: 24px

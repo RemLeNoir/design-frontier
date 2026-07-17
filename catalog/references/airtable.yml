@@ -1,0 +1,52 @@
+id: airtable
+name: Airtable
+kind: brand
+status: reviewed
+last_reviewed: 2026-07-16
+summary: Data operations reference for views, grids, filters and multiple representations of the same records.
+covers_layers:
+  tables: 0.96
+  density: 0.8
+  navigation: 0.72
+  forms: 0.62
+  feedback: 0.6
+recommended_for:
+- saas-operational-dense
+- crm-commercial
+- executive-dashboard
+avoid_for:
+- static-content-site
+- simple-checkout
+boundaries:
+- Use view-switching patterns only when multiple representations add real value.
+- Do not expose database concepts to users who do not need them.
+- Table flexibility must not replace explicit workflow design.
+evidence:
+- title: Airtable Views
+  url: https://www.airtable.com/platform/views
+  type: primary
+- title: Airtable Interface Designer
+  url: https://www.airtable.com/platform/interface-designer
+  type: primary
+recipes:
+  tables:
+    principles:
+    - Keep records scannable and directly manipulable.
+    requirements:
+    - Use a sticky header for long tables.
+    - Keep row-level actions available without opening the record.
+    - Expose active filters above the result set.
+    - Support column visibility when datasets exceed the primary task.
+    prohibitions:
+    - Do not replace comparison-heavy tables with disconnected cards.
+    - Do not hide every row action behind a single generic menu.
+    components:
+      data-table:
+      - Selection column appears only when bulk actions exist.
+      - Editable cells must show hover and focus affordances.
+      filter-bar:
+      - Active filters are removable individually and clearable as a group.
+    metrics:
+      default_row_height: 40px
+      compact_row_height: 32px
+      header_height: 40px

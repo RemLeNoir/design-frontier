@@ -1,0 +1,49 @@
+id: ant-design
+name: Ant Design
+kind: design-system
+status: reviewed
+official_design_system: true
+last_reviewed: '2026-07-16'
+summary: Enterprise application components with strong coverage for forms, tables, navigation and data display.
+covers_layers:
+  application_shell: 0.84
+  navigation: 0.82
+  tables: 0.92
+  forms: 0.9
+  data_visualization: 0.74
+  feedback: 0.86
+  density: 0.78
+recommended_for:
+- saas-operational-dense
+- crm-commercial
+- analytics-platform
+avoid_for:
+- minimal-marketing-site
+- consumer-entertainment
+boundaries:
+- Do not ship the default visual theme without adapting semantic tokens.
+- Component breadth is not permission to add unused controls.
+- Table density must remain readable and accessible.
+evidence:
+- title: Ant Design
+  url: https://ant.design/
+  type: primary
+recipes:
+  application_shell:
+    requirements:
+    - Apply Ant Design only within the application shell layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.
+  navigation:
+    requirements:
+    - Apply Ant Design only within the navigation layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.
+  tables:
+    requirements:
+    - Apply Ant Design only within the tables layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.

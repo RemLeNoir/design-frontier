@@ -1,0 +1,48 @@
+id: uswds
+name: U.S. Web Design System
+kind: design-system
+status: reviewed
+official_design_system: true
+last_reviewed: '2026-07-16'
+summary: Accessible public services, content clarity, forms, navigation and resilient government web patterns.
+covers_layers:
+  forms: 0.92
+  accessibility: 0.96
+  navigation: 0.82
+  feedback: 0.86
+  documentation: 0.78
+  mobile: 0.82
+recommended_for:
+- public-service
+- document-portal
+- regulated-workflow
+avoid_for:
+- luxury-brand-marketing
+- creative-workspace
+boundaries:
+- Do not copy U.S. government identity into unrelated services.
+- Plain language and task completion take precedence over decorative branding.
+- Service patterns still require localization for jurisdiction and audience.
+evidence:
+- title: U.S. Web Design System
+  url: https://designsystem.digital.gov/
+  type: primary
+recipes:
+  forms:
+    requirements:
+    - Apply U.S. Web Design System only within the forms layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.
+  accessibility:
+    requirements:
+    - Apply U.S. Web Design System only within the accessibility layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.
+  navigation:
+    requirements:
+    - Apply U.S. Web Design System only within the navigation layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.

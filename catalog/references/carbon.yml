@@ -1,0 +1,44 @@
+id: carbon
+name: IBM Carbon Design System
+kind: design-system
+status: reviewed
+last_reviewed: 2026-07-16
+summary: Enterprise component behavior, data-heavy interfaces and systematic interaction states.
+covers_layers:
+  application_shell: 0.82
+  tables: 0.88
+  forms: 0.86
+  data_visualization: 0.88
+  accessibility: 0.86
+  feedback: 0.82
+recommended_for:
+- saas-operational-dense
+- executive-dashboard
+- regulated-workflow
+avoid_for:
+- minimal-editorial-site
+- playful-consumer-product
+boundaries:
+- Use behavior and component rigor without importing IBM brand identity.
+- Enterprise density still requires task prioritization.
+- Do not combine multiple complete component systems in one project.
+evidence:
+- title: Carbon Design System
+  url: https://carbondesignsystem.com/
+  type: primary
+recipes:
+  tables:
+    requirements:
+    - Provide loading, empty, error and partial-data states.
+    - Keep bulk actions in a contextual toolbar after selection.
+    - Use explicit sort state and accessible column labels.
+    components:
+      data-table:
+      - Pagination reports range and total when known.
+      - Dense mode must preserve a 32px minimum pointer target.
+    metrics:
+      minimum_pointer_target: 32px
+  feedback:
+    requirements:
+    - Status messages state what happened and what the user can do next.
+    - Inline and global feedback must not contradict each other.

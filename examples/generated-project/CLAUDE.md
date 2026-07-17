@@ -1,0 +1,13 @@
+<!-- design-frontier:claude:start -->
+@AGENTS.md
+
+## Design Frontier
+
+- Read `DESIGN.md` and `DESIGN-CHECKLIST.md` before editing frontend code.
+- Read `APP-DESIGN.md` before changing product UI.
+- Read `LANDING-DESIGN.md` before changing public marketing UI.
+- Treat `.design-frontier/` as the canonical source of decisions and tokens.
+- Reuse existing components and semantic tokens before adding variants.
+- Put lasting token changes in `.design-frontier/project.yml` under `token_overrides`, then regenerate.
+- Run `npx design-frontier generate .`, `validate .`, `lint .`, and `diff .` after visual changes.
+<!-- design-frontier:claude:end -->

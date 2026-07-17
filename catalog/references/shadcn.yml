@@ -1,0 +1,47 @@
+id: shadcn
+name: shadcn/ui
+kind: framework
+status: reviewed
+official_design_system: false
+last_reviewed: '2026-07-16'
+summary: Composable application primitives with local ownership, Tailwind integration and restrained default styling.
+covers_layers:
+  forms: 0.82
+  feedback: 0.76
+  application_shell: 0.64
+  navigation: 0.66
+  accessibility: 0.7
+recommended_for:
+- developer-tool
+- technical-b2b-landing
+- saas-operational-dense
+avoid_for:
+- teams-without-component-ownership
+- non-tailwind-project
+boundaries:
+- shadcn/ui is a component starting point, not a complete product design system.
+- Local ownership requires the project to maintain variants and accessibility.
+- Do not mix copied registry styles without reconciling tokens.
+evidence:
+- title: shadcn/ui documentation
+  url: https://ui.shadcn.com/
+  type: primary
+recipes:
+  forms:
+    requirements:
+    - Apply shadcn/ui only within the forms layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.
+  feedback:
+    requirements:
+    - Apply shadcn/ui only within the feedback layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.
+  application_shell:
+    requirements:
+    - Apply shadcn/ui only within the application shell layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.

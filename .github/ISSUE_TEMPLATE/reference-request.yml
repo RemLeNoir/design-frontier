@@ -1,0 +1,29 @@
+name: Catalog reference request
+description: Propose a new brand, framework, design system or pattern.
+title: "[Reference]: "
+labels: [catalog]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Reference name
+    validations:
+      required: true
+  - type: textarea
+    id: layers
+    attributes:
+      label: Layers it should cover
+    validations:
+      required: true
+  - type: textarea
+    id: boundaries
+    attributes:
+      label: What must it not influence?
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Primary sources
+    validations:
+      required: true

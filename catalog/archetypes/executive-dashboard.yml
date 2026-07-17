@@ -1,0 +1,28 @@
+id: executive-dashboard
+name: Executive dashboard
+description: High-level monitoring with KPIs, trends, exceptions and drill-down paths.
+defaults:
+  density: medium
+  navigation: compact-sidebar
+  surfaces: app
+  references:
+    application_shell: metronic
+    navigation: linear
+    data_visualization: carbon
+    feedback: polaris
+  theme: light
+  device_priority: desktop
+requirements:
+- metrics with context and comparison period
+- visible data freshness
+- drill-down from summary to evidence
+- restrained chart palette
+prohibitions:
+- decorative charts without decisions attached
+- dashboards made only of equal-sized cards
+signals:
+- executive
+- kpi
+- scorecard
+- management dashboard
+- board

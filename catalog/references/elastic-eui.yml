@@ -1,0 +1,49 @@
+id: elastic-eui
+name: Elastic UI Framework
+kind: design-system
+status: reviewed
+official_design_system: true
+last_reviewed: '2026-07-16'
+summary: Data-heavy observability interfaces, query controls, charts, tables and technical workflows.
+covers_layers:
+  application_shell: 0.78
+  navigation: 0.8
+  tables: 0.9
+  forms: 0.78
+  data_visualization: 0.94
+  feedback: 0.82
+  density: 0.84
+recommended_for:
+- analytics-platform
+- developer-tool
+- saas-operational-dense
+avoid_for:
+- simple-content-site
+- consumer-checkout
+boundaries:
+- Use observability patterns only when users work with comparable technical data.
+- Do not expose query complexity without a real user need.
+- Visualization density requires explicit hierarchy and defaults.
+evidence:
+- title: Elastic UI Framework
+  url: https://eui.elastic.co/
+  type: primary
+recipes:
+  application_shell:
+    requirements:
+    - Apply Elastic UI Framework only within the application shell layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.
+  navigation:
+    requirements:
+    - Apply Elastic UI Framework only within the navigation layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.
+  tables:
+    requirements:
+    - Apply Elastic UI Framework only within the tables layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.

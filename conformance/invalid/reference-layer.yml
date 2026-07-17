@@ -1,0 +1,14 @@
+format_version: 2
+name: Invalid composition
+product_type: b2b-saas
+surfaces: app
+dominant_patterns:
+  - tables
+density: high
+accessibility: wcag-aa
+theme: light
+device_priority: desktop
+locales:
+  - en
+reference_overrides:
+  tables: apple

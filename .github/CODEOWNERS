@@ -1,0 +1,25 @@
+# Default owner for everything in the repo.
+* @RemLeNoir
+
+# Sensitive areas require the owner's review.
+/catalog/ @RemLeNoir
+/schemas/ @RemLeNoir
+/src/ @RemLeNoir
+/.github/ @RemLeNoir
+/.github/workflows/ @RemLeNoir
+
+# Legal, licensing and governance — do not merge without owner review.
+/LICENSE @RemLeNoir
+/LICENSE.es.md @RemLeNoir
+/COMMERCIAL-LICENSE.md @RemLeNoir
+/COMMERCIAL-LICENSE.es.md @RemLeNoir
+/NOTICE.md @RemLeNoir
+/TRADEMARK.md @RemLeNoir
+/TRADEMARK.es.md @RemLeNoir
+/CLA.md @RemLeNoir
+/DCO.txt @RemLeNoir
+/SECURITY.md @RemLeNoir
+/CONTRIBUTING.md @RemLeNoir
+/docs/governance.md @RemLeNoir
+/docs/security-model.md @RemLeNoir
+/package.json @RemLeNoir

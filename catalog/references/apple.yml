@@ -1,0 +1,42 @@
+id: apple
+name: Apple
+kind: brand
+status: reviewed
+last_reviewed: 2026-07-16
+summary: Editorial product presentation, large-scale visual rhythm and platform design guidance.
+covers_layers:
+  marketing_site: 0.95
+  brand: 0.82
+  accessibility: 0.68
+recommended_for:
+- product-visual-landing
+- premium-consumer-marketing
+- technical-b2b-landing
+avoid_for:
+- saas-operational-dense
+- table-heavy-backoffice
+boundaries:
+- Never use as a table, form-density or backoffice-shell reference.
+- Large type and whitespace require sufficient product imagery and concise copy.
+- Do not reproduce proprietary assets, fonts or product-page compositions wholesale.
+evidence:
+- title: Apple Human Interface Guidelines
+  url: https://developer.apple.com/design/human-interface-guidelines
+  type: primary
+- title: Apple Design Resources
+  url: https://developer.apple.com/design/resources/
+  type: primary
+recipes:
+  marketing_site:
+    principles:
+    - Build a paced product story with one idea per section.
+    requirements:
+    - Use large visual moments only for the primary product claim.
+    - Alternate explanation, proof and demonstration.
+    - Keep each CTA tied to the section promise.
+    prohibitions:
+    - Do not transfer display typography or cinematic spacing into the application.
+    - Do not use empty spectacle where the product needs explanation.
+    metrics:
+      section_vertical_space: clamp(64px,10vw,144px)
+      reading_width: 68ch

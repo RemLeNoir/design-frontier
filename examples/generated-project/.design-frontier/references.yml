@@ -1,0 +1,29 @@
+format_version: 2
+references:
+  application_shell:
+    primary: metronic
+    weight: 0.75
+    source: override
+  navigation:
+    primary: linear
+    weight: 0.75
+    source: override
+  tables:
+    primary: airtable
+    secondary: carbon
+    weight: 0.85
+    source: override
+  forms:
+    primary: stripe
+    secondary: govuk
+    weight: 0.75
+    source: override
+  feedback:
+    primary: polaris
+    weight: 0.8
+    source: archetype
+  marketing_site:
+    primary: apple
+    secondary: stripe
+    weight: 0.55
+    source: override

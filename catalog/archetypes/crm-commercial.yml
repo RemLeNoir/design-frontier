@@ -1,0 +1,31 @@
+id: crm-commercial
+name: Commercial CRM
+description: Accounts, contacts, opportunities, tasks, pipelines and detailed records.
+defaults:
+  density: medium-high
+  navigation: persistent-sidebar
+  surfaces: app-and-landing
+  references:
+    application_shell: metronic
+    navigation: linear
+    tables: airtable
+    forms: polaris
+    feedback: polaris
+    marketing_site: stripe
+  theme: light
+  device_priority: desktop
+requirements:
+- fast record scanning
+- clear primary next action
+- list-detail continuity
+- filters and saved views
+prohibitions:
+- hiding frequent actions in overflow menus
+- cards for every field group
+signals:
+- crm
+- sales
+- pipeline
+- leads
+- accounts
+- opportunities

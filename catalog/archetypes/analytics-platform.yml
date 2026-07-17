@@ -1,0 +1,35 @@
+id: analytics-platform
+name: Analytics platform
+description: Data exploration product with dashboards, filters, charts, saved views
+  and drill-down workflows.
+signals:
+- analytics
+- observability
+- metrics
+- charts
+- business intelligence
+- monitoring
+- dashboard
+defaults:
+  density: high
+  navigation: workspace-sidebar
+  surfaces: app-and-landing
+  theme: both
+  device_priority: desktop
+  references:
+    application_shell: elastic-eui
+    navigation: elastic-eui
+    tables: ant-design
+    forms: carbon
+    data_visualization: elastic-eui
+    feedback: carbon
+    marketing_site: stripe
+requirements:
+- chart and table parity for key data
+- declared empty and no-data states
+- filter state visible in URLs or saved views
+- accessible chart alternatives
+prohibitions:
+- dashboard grids without decision hierarchy
+- color-only data encoding
+- automatic chart proliferation

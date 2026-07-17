@@ -1,0 +1,48 @@
+id: spectrum
+name: Adobe Spectrum
+kind: design-system
+status: reviewed
+official_design_system: true
+last_reviewed: '2026-07-16'
+summary: Creative-tool components, cross-platform density, accessible controls and data-rich workspace behavior.
+covers_layers:
+  application_shell: 0.78
+  forms: 0.84
+  feedback: 0.82
+  accessibility: 0.9
+  density: 0.82
+  mobile: 0.68
+recommended_for:
+- content-management
+- developer-tool
+- creative-workspace
+avoid_for:
+- simple-public-service
+- minimal-landing
+boundaries:
+- Do not import Adobe branding or creative-tool complexity into simpler products.
+- Density modes require deliberate product support.
+- Workspace patterns are appropriate only for sustained expert use.
+evidence:
+- title: Adobe Spectrum
+  url: https://spectrum.adobe.com/
+  type: primary
+recipes:
+  application_shell:
+    requirements:
+    - Apply Adobe Spectrum only within the application shell layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.
+  forms:
+    requirements:
+    - Apply Adobe Spectrum only within the forms layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.
+  feedback:
+    requirements:
+    - Apply Adobe Spectrum only within the feedback layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.

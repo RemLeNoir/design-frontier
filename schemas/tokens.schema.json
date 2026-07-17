@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design-frontier.dev/schemas/tokens.schema.json",
+  "title": "Design Frontier DTCG-compatible semantic tokens",
+  "type": "object",
+  "required": ["color", "space", "size", "radius", "border", "shadow", "typography", "motion"],
+  "$defs": {
+    "token": { "type": "object", "required": ["$type", "$value"], "properties": { "$type": { "type": "string", "minLength": 1 }, "$value": {}, "$description": { "type": "string" } }, "additionalProperties": false },
+    "group": { "type": "object", "additionalProperties": { "oneOf": [{ "$ref": "#/$defs/token" }, { "$ref": "#/$defs/group" }] } }
+  },
+  "properties": {
+    "color": { "$ref": "#/$defs/group" }, "space": { "$ref": "#/$defs/group" }, "size": { "$ref": "#/$defs/group" },
+    "radius": { "$ref": "#/$defs/group" }, "border": { "$ref": "#/$defs/group" }, "shadow": { "$ref": "#/$defs/group" },
+    "typography": { "$ref": "#/$defs/group" }, "motion": { "$ref": "#/$defs/group" }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,33 @@
+id: marketplace
+name: Marketplace product
+description: Two-sided discovery and transaction product with listings, trust, search
+  and account workflows.
+signals:
+- marketplace
+- listings
+- buyers
+- sellers
+- booking
+- matching
+- directory
+defaults:
+  density: medium
+  navigation: top-navigation
+  surfaces: app-and-landing
+  theme: light
+  device_priority: balanced
+  references:
+    forms: material3
+    feedback: polaris
+    mobile: material3
+    marketing_site: apple
+    accessibility: radix
+    navigation: material3
+requirements:
+- search and filter transparency
+- trust and identity signals
+- clear transaction states
+- mobile-first listing actions
+prohibitions:
+- hidden fees or commitments
+- image-led cards without essential metadata

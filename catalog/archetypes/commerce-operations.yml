@@ -1,0 +1,33 @@
+id: commerce-operations
+name: Commerce operations
+description: Backoffice for products, orders, inventory, fulfilment and merchant workflows.
+signals:
+- commerce
+- orders
+- inventory
+- merchant
+- catalog
+- fulfilment
+- ecommerce
+defaults:
+  density: medium-high
+  navigation: persistent-sidebar
+  surfaces: app-and-landing
+  theme: light
+  device_priority: desktop
+  references:
+    application_shell: polaris
+    navigation: polaris
+    tables: polaris
+    forms: polaris
+    feedback: polaris
+    marketing_site: stripe
+    accessibility: radix
+requirements:
+- clear order and fulfilment status
+- safe bulk operations
+- resource lists and comparison tables
+- visible inventory exceptions
+prohibitions:
+- decorative product cards inside operational tables
+- hidden destructive inventory actions

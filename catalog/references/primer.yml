@@ -1,0 +1,49 @@
+id: primer
+name: GitHub Primer
+kind: design-system
+status: reviewed
+official_design_system: true
+last_reviewed: '2026-07-16'
+summary: Developer-facing navigation, repository workflows, dense lists and accessible component behavior.
+covers_layers:
+  application_shell: 0.78
+  navigation: 0.92
+  tables: 0.82
+  forms: 0.72
+  feedback: 0.82
+  documentation: 0.86
+  accessibility: 0.84
+recommended_for:
+- developer-tool
+- document-portal
+- saas-operational-dense
+avoid_for:
+- luxury-marketing
+- image-first-commerce
+boundaries:
+- Use repository and workflow patterns only when the product has comparable information depth.
+- Do not import GitHub vocabulary or visual identity into unrelated products.
+- Dense lists still require clear grouping and action priority.
+evidence:
+- title: Primer Design System
+  url: https://primer.style/
+  type: primary
+recipes:
+  application_shell:
+    requirements:
+    - Apply GitHub Primer only within the application shell layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.
+  navigation:
+    requirements:
+    - Apply GitHub Primer only within the navigation layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.
+  tables:
+    requirements:
+    - Apply GitHub Primer only within the tables layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.
