@@ -1,0 +1,30 @@
+id: document-portal
+name: Document portal
+description: Search, read, review, classify and act on documents or cases.
+defaults:
+  density: medium
+  navigation: sidebar-and-breadcrumbs
+  surfaces: app
+  references:
+    application_shell: carbon
+    navigation: linear
+    forms: govuk
+    feedback: govuk
+    documentation: stripe
+  theme: light
+  device_priority: desktop
+requirements:
+- reading width control
+- document metadata hierarchy
+- persistent status and ownership
+- accessible search and filters
+prohibitions:
+- full-width long-form text
+- ambiguous icon-only actions
+signals:
+- document
+- case
+- file
+- evidence
+- portal
+- records

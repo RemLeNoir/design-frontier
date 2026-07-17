@@ -1,0 +1,67 @@
+rules:
+- id: COMP-001
+  references:
+  - metronic
+  - shadcn
+  layers:
+  - application_shell
+  - forms
+  - navigation
+  severity: warning
+  message: Metronic and shadcn/ui use different ownership and composition assumptions.
+    Assign one to shell structure and the other only to selected primitives.
+- id: COMP-002
+  references:
+  - carbon
+  - material3
+  layers:
+  - forms
+  - feedback
+  - navigation
+  severity: warning
+  message: Carbon and Material 3 have different density and platform assumptions.
+    Do not mix their component anatomies in the same layer.
+- id: COMP-003
+  references:
+  - apple
+  - govuk
+  layers:
+  - marketing_site
+  - forms
+  - accessibility
+  severity: info
+  message: Apple-style presentation and GOV.UK-style service flows can coexist only
+    when public storytelling is kept separate from transactional forms.
+- id: COMP-004
+  references:
+  - ant-design
+  - carbon
+  layers:
+  - tables
+  - forms
+  - feedback
+  severity: warning
+  message: Ant Design and Carbon are both complete enterprise systems. Select one
+    behavior model per component layer.
+- id: COMP-005
+  references:
+  - lightning
+  - airtable
+  layers:
+  - tables
+  - forms
+  - navigation
+  severity: info
+  message: Use Lightning for record workflows and Airtable for grid operations. Do
+    not merge both interaction models inside one view.
+- id: COMP-006
+  references:
+  - spectrum
+  - govuk
+  layers:
+  - forms
+  - accessibility
+  - density
+  severity: warning
+  message: Spectrum expert-workspace density conflicts with public-service simplicity
+    unless the audiences and surfaces are explicitly separated.

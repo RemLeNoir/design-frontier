@@ -1,0 +1,291 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design-frontier.dev/schemas/project.schema.json",
+  "title": "Design Frontier Project",
+  "type": "object",
+  "required": [
+    "format_version",
+    "name",
+    "product_type",
+    "surfaces",
+    "dominant_patterns",
+    "density",
+    "accessibility",
+    "theme",
+    "device_priority",
+    "locales"
+  ],
+  "properties": {
+    "format_version": {
+      "const": 2
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "product_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "users": {
+      "type": "string"
+    },
+    "goals": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "auto_archetype": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "surfaces": {
+      "enum": [
+        "app",
+        "landing",
+        "app-and-landing"
+      ]
+    },
+    "dominant_patterns": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "density": {
+      "enum": [
+        "low",
+        "medium",
+        "medium-high",
+        "high"
+      ]
+    },
+    "accessibility": {
+      "enum": [
+        "wcag-aa",
+        "wcag-aaa-where-practical"
+      ]
+    },
+    "theme": {
+      "enum": [
+        "light",
+        "dark",
+        "both"
+      ]
+    },
+    "device_priority": {
+      "enum": [
+        "desktop",
+        "mobile",
+        "balanced"
+      ]
+    },
+    "locales": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 2
+      }
+    },
+    "navigation": {
+      "type": "string"
+    },
+    "stack": {
+      "type": "object",
+      "properties": {
+        "framework": {
+          "type": "string"
+        },
+        "language": {
+          "type": "string"
+        },
+        "styling": {
+          "type": "string"
+        },
+        "componentLibrary": {
+          "type": "string"
+        },
+        "packageManager": {
+          "type": "string"
+        },
+        "storybook": {
+          "type": "boolean"
+        },
+        "testRunner": {
+          "type": "string"
+        },
+        "bundler": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "brand": {
+      "type": "object",
+      "properties": {
+        "primary": {
+          "$ref": "#/$defs/hex"
+        },
+        "secondary": {
+          "$ref": "#/$defs/hex"
+        },
+        "neutral": {
+          "$ref": "#/$defs/hex"
+        },
+        "surface": {
+          "$ref": "#/$defs/hex"
+        },
+        "fontHeading": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fontBody": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fontMono": {
+          "type": "string",
+          "minLength": 1
+        },
+        "logoPath": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "constraints": {
+      "type": "object",
+      "properties": {
+        "must": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "must_not": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "regulatory": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "reference_overrides": {
+      "type": "object",
+      "propertyNames": {
+        "enum": [
+          "brand",
+          "typography",
+          "layout",
+          "application_shell",
+          "navigation",
+          "density",
+          "tables",
+          "forms",
+          "data_visualization",
+          "feedback",
+          "marketing_site",
+          "documentation",
+          "accessibility",
+          "motion",
+          "mobile"
+        ]
+      },
+      "additionalProperties": {
+        "oneOf": [
+          {
+            "type": "string",
+            "minLength": 1
+          },
+          {
+            "type": "object",
+            "required": [
+              "primary"
+            ],
+            "properties": {
+              "primary": {
+                "type": "string",
+                "minLength": 1
+              },
+              "secondary": {
+                "type": "string",
+                "minLength": 1
+              },
+              "weight": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        ]
+      }
+    },
+    "outputs": {
+      "type": "object",
+      "properties": {
+        "css": {
+          "type": "boolean"
+        },
+        "typescript": {
+          "type": "boolean"
+        },
+        "tailwind": {
+          "type": "boolean"
+        },
+        "design_system_spec": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "plugins": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "agents": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "claude",
+          "codex",
+          "gemini",
+          "cursor",
+          "copilot"
+        ]
+      }
+    },
+    "token_overrides": {
+      "type": "object",
+      "description": "Deep overrides merged into generated semantic token data.",
+      "additionalProperties": true
+    }
+  },
+  "$defs": {
+    "hex": {
+      "type": "string",
+      "pattern": "^#[0-9a-fA-F]{6}([0-9a-fA-F]{2})?$"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,33 @@
+id: content-management
+name: Content management workspace
+description: Editorial or asset workspace with structured content, revision, publishing
+  and preview workflows.
+signals:
+- cms
+- content management
+- editorial
+- publishing
+- assets
+- media library
+- revision
+defaults:
+  density: medium-high
+  navigation: workspace-sidebar
+  surfaces: app-and-landing
+  theme: light
+  device_priority: desktop
+  references:
+    application_shell: spectrum
+    navigation: atlassian
+    forms: spectrum
+    tables: airtable
+    feedback: atlassian
+    marketing_site: apple
+requirements:
+- draft and published state clarity
+- revision history
+- safe preview and publish actions
+- asset metadata and search
+prohibitions:
+- ambiguous save versus publish behavior
+- oversized cards for simple metadata

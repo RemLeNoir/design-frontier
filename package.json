@@ -1,0 +1,94 @@
+{
+  "name": "design-frontier",
+  "version": "1.1.0",
+  "description": "A source-available design orchestration standard and CLI that turns product decisions, reference catalogs, and repository evidence into enforceable frontend contracts for AI coding agents. Free for noncommercial use; commercial use requires a separate license.",
+  "type": "module",
+  "bin": {
+    "design-frontier": "./dist/cli.js",
+    "df": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "catalog",
+    "schemas",
+    "skills",
+    "docs",
+    "conformance",
+    "examples",
+    "README.md",
+    "README.es.md",
+    "LICENSE",
+    "COMMERCIAL-LICENSE.md",
+    "TRADEMARK.md",
+    "NOTICE.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "npm run clean && tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "check": "npm run typecheck && npm run test && npm run build && npm run catalog:validate",
+    "dev": "tsx src/cli.ts",
+    "prepack": "npm run check",
+    "catalog:validate": "npm run build --silent && node dist/cli.js catalog validate",
+    "conformance": "vitest run src/conformance.test.ts",
+    "smoke:pack": "node scripts/smoke-pack.mjs",
+    "clean": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\""
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "design-system",
+    "design-tokens",
+    "ai-agents",
+    "frontend",
+    "claude-code",
+    "codex",
+    "agents-md",
+    "design-md",
+    "gemini-cli",
+    "cursor",
+    "github-copilot",
+    "design-governance",
+    "design-lint",
+    "source-available",
+    "noncommercial",
+    "polyform-noncommercial"
+  ],
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RemLeNoir/design-frontier.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RemLeNoir/design-frontier/issues"
+  },
+  "homepage": "https://github.com/RemLeNoir/design-frontier#readme",
+  "dependencies": {
+    "commander": "^15.0.0",
+    "yaml": "^2.9.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
+    "tsx": "^4.23.1",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.10"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "types": "./dist/index.d.ts",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}

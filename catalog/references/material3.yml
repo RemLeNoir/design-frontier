@@ -1,0 +1,49 @@
+id: material3
+name: Material Design 3
+kind: design-system
+status: reviewed
+official_design_system: true
+last_reviewed: '2026-07-16'
+summary: Responsive, mobile-first components, adaptive color, motion and accessible interaction guidance.
+covers_layers:
+  forms: 0.86
+  feedback: 0.86
+  accessibility: 0.9
+  motion: 0.9
+  mobile: 0.96
+  navigation: 0.78
+  brand: 0.62
+recommended_for:
+- mobile-product
+- marketplace
+- public-service
+avoid_for:
+- dense-desktop-only-backoffice
+- strict-editorial-marketing
+boundaries:
+- Do not apply mobile component scale to dense desktop workflows without adaptation.
+- Dynamic color is optional and cannot replace semantic status tokens.
+- Material visual identity is not required to use its interaction guidance.
+evidence:
+- title: Material Design 3
+  url: https://m3.material.io/
+  type: primary
+recipes:
+  forms:
+    requirements:
+    - Apply Material Design 3 only within the forms layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.
+  feedback:
+    requirements:
+    - Apply Material Design 3 only within the feedback layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.
+  accessibility:
+    requirements:
+    - Apply Material Design 3 only within the accessibility layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.

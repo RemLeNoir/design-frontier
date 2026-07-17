@@ -1,0 +1,46 @@
+# Dependencies
+node_modules/
+.pnp.*
+
+# Build and test output
+dist/
+build/
+coverage/
+.vitest/
+*.tsbuildinfo
+
+# Package artifacts
+*.tgz
+*.zip
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Local Design Frontier fixtures and reports
+.design-frontier-local/
+.tmp/
+tmp/
+playwright-report/
+test-results/
+
+# Local agent instructions (not published)
+/CLAUDE.md

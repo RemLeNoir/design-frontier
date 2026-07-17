@@ -1,0 +1,34 @@
+id: mobile-product
+name: Mobile-first product
+description: Touch-first application where the primary workflow must work on narrow
+  screens and intermittent connectivity.
+signals:
+- mobile app
+- mobile-first
+- field app
+- driver app
+- tablet
+- pwa
+- offline
+defaults:
+  density: medium
+  navigation: bottom-navigation-or-compact-header
+  surfaces: app
+  theme: both
+  device_priority: mobile
+  references:
+    mobile: material3
+    forms: material3
+    feedback: material3
+    accessibility: radix
+    navigation: material3
+    motion: material3
+requirements:
+- touch-safe targets
+- offline and retry behavior
+- short primary flows
+- safe keyboard and viewport behavior
+prohibitions:
+- desktop tables compressed into cards without prioritization
+- hover-only interactions
+- essential actions outside thumb reach

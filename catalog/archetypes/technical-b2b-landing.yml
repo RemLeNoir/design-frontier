@@ -1,0 +1,28 @@
+id: technical-b2b-landing
+name: Technical B2B landing
+description: Public site for a complex product that must explain capability, trust
+  and proof without overwhelming visitors.
+defaults:
+  density: medium
+  navigation: top-navigation
+  surfaces: landing
+  references:
+    marketing_site: stripe
+    brand: apple
+    documentation: stripe
+  theme: light
+  device_priority: balanced
+requirements:
+- visible product evidence
+- concrete capability sections
+- proof and objections near conversion points
+- restrained motion
+prohibitions:
+- empty cinematic sections without product information
+- generic gradient decoration
+signals:
+- b2b landing
+- technical product
+- platform
+- infrastructure
+- enterprise software

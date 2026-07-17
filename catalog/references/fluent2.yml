@@ -1,0 +1,48 @@
+id: fluent2
+name: Microsoft Fluent 2
+kind: design-system
+status: reviewed
+official_design_system: true
+last_reviewed: '2026-07-16'
+summary: Enterprise productivity components, adaptive layouts, accessibility and cross-platform interaction patterns.
+covers_layers:
+  application_shell: 0.84
+  navigation: 0.84
+  forms: 0.84
+  tables: 0.76
+  feedback: 0.86
+  accessibility: 0.88
+  mobile: 0.72
+recommended_for:
+- saas-operational-dense
+- document-portal
+- public-service
+avoid_for:
+- brand-led-editorial-site
+boundaries:
+- Do not inherit Microsoft branding or platform chrome.
+- Choose one component behavior model for the project.
+- Cross-platform patterns must be adapted to the actual target devices.
+evidence:
+- title: Fluent 2 Design System
+  url: https://fluent2.microsoft.design/
+  type: primary
+recipes:
+  application_shell:
+    requirements:
+    - Apply Microsoft Fluent 2 only within the application shell layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.
+  navigation:
+    requirements:
+    - Apply Microsoft Fluent 2 only within the navigation layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.
+  forms:
+    requirements:
+    - Apply Microsoft Fluent 2 only within the forms layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.

@@ -1,0 +1,49 @@
+id: fiori
+name: SAP Fiori
+kind: design-system
+status: reviewed
+official_design_system: true
+last_reviewed: '2026-07-16'
+summary: Role-based enterprise workflows, complex business forms, analytical pages and object detail patterns.
+covers_layers:
+  application_shell: 0.84
+  navigation: 0.78
+  tables: 0.88
+  forms: 0.9
+  data_visualization: 0.84
+  feedback: 0.82
+  accessibility: 0.8
+recommended_for:
+- saas-operational-dense
+- analytics-platform
+- regulated-workflow
+avoid_for:
+- consumer-social-product
+- visual-marketing
+boundaries:
+- Use role-based workflow logic without adopting SAP terminology.
+- Analytical pages must not become collections of unrelated widgets.
+- Object pages require a stable entity model.
+evidence:
+- title: SAP Fiori Design Guidelines
+  url: https://experience.sap.com/fiori-design-web/
+  type: primary
+recipes:
+  application_shell:
+    requirements:
+    - Apply SAP Fiori only within the application shell layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.
+  navigation:
+    requirements:
+    - Apply SAP Fiori only within the navigation layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.
+  tables:
+    requirements:
+    - Apply SAP Fiori only within the tables layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.

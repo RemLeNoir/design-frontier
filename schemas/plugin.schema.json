@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design-frontier.dev/schemas/plugin.schema.json",
+  "title": "Design Frontier plugin metadata",
+  "description": "Runtime plugin modules export this metadata plus optional references, archetypes, compatibility rules, exporters, and validators.",
+  "type": "object",
+  "required": ["name", "version"],
+  "properties": {
+    "name": { "type": "string", "minLength": 1 },
+    "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+" },
+    "references": { "type": "array", "items": { "$ref": "reference.schema.json" } },
+    "archetypes": { "type": "array" },
+    "compatibility": { "type": "array" }
+  },
+  "additionalProperties": true
+}

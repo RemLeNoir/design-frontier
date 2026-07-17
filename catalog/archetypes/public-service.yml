@@ -1,0 +1,34 @@
+id: public-service
+name: Public service
+description: Citizen or regulated service focused on task completion, accessibility,
+  evidence and clear error recovery.
+signals:
+- public service
+- government
+- citizen
+- administration
+- benefit
+- application form
+- regulated
+defaults:
+  density: medium
+  navigation: task-oriented
+  surfaces: app-and-landing
+  theme: light
+  device_priority: balanced
+  references:
+    forms: govuk
+    accessibility: uswds
+    navigation: govuk
+    feedback: uswds
+    documentation: govuk
+    mobile: material3
+requirements:
+- plain language
+- persistent progress where tasks span steps
+- accessible error summaries
+- printable or downloadable evidence where required
+prohibitions:
+- brand expression that obscures service steps
+- unexplained abbreviations
+- time-limited interactions without warning

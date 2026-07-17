@@ -1,0 +1,16 @@
+{
+  "format_version": 2,
+  "package_version": "1.0.0",
+  "generated_at": "2026-07-16T08:19:45.285Z",
+  "files": {
+    ".design-frontier/generated/tailwind.preset.mjs": "4458f0851f37681ee86d96d1077a0a401d5ef012e57436951a61bd0a319e6cc0",
+    ".design-frontier/generated/tokens.css": "9ea5541cbe194267bababaaeaaa95fa8103412a29dacfcf1623df1d6a7daec61",
+    ".design-frontier/generated/tokens.ts": "f88b39f3cb430245fad7ffa30790cac555f65e1ba50509c45da7ff8dcdb40248",
+    "APP-DESIGN.md": "3d3306e5ae4b0a73a7b7f6fd6e3450fdd87f75a51df50080571e9c5eed9271e7",
+    "DESIGN-CHECKLIST.md": "baba27cc447df8424cf7cf7cbf7bc10198a9c078129abf5176d83b6ece416ad4",
+    "DESIGN-SOURCES.md": "a290c98f83f6f5e81c3be76f37c1f301aff6065f89fa7fee2b6d373387c1a07f",
+    "DESIGN.md": "70ed03d036dd374c98599abd24b711728c4b396e0cb621a95429fe3406c8ecaf",
+    "LANDING-DESIGN.md": "094e67e0a7c58b3daebb77463bc8c331f930bdbc6fe76ce63d31621d53bab4eb",
+    "docs/design-system.md": "39c448090c2270c564479e9b760e7b9c5c2c52e9763a47939f7633394db7c56e"
+  }
+}

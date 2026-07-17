@@ -1,0 +1,40 @@
+id: govuk
+name: GOV.UK Design System
+kind: design-system
+status: reviewed
+last_reviewed: 2026-07-16
+summary: Clear public-service forms, error handling, accessible content and task completion.
+covers_layers:
+  forms: 0.96
+  accessibility: 0.96
+  feedback: 0.9
+  navigation: 0.72
+  documentation: 0.9
+recommended_for:
+- public-service
+- regulated-workflow
+- document-portal
+avoid_for:
+- expressive-brand-marketing
+- entertainment-product
+boundaries:
+- Adapt visual identity while preserving interaction clarity.
+- Do not copy government branding into unrelated products.
+- Service simplicity should not erase necessary expert controls.
+evidence:
+- title: GOV.UK Design System
+  url: https://design-system.service.gov.uk/
+  type: primary
+recipes:
+  forms:
+    requirements:
+    - Ask only for information needed at the current step.
+    - Use error summaries that link to invalid fields.
+    - Write errors as direct correction instructions.
+    prohibitions:
+    - Do not validate solely by color.
+  accessibility:
+    requirements:
+    - Meet WCAG AA contrast.
+    - Use native semantics before ARIA.
+    - Maintain visible keyboard focus.

@@ -1,0 +1,28 @@
+format_version: 2
+name: Conformance CRM
+product_type: crm
+users: Sales and account teams
+goals:
+  - qualify opportunities
+  - track follow-up
+surfaces: app-and-landing
+dominant_patterns:
+  - tables
+  - forms
+  - pipelines
+density: medium-high
+accessibility: wcag-aa
+theme: both
+device_priority: desktop
+locales:
+  - en
+navigation: sidebar
+outputs:
+  css: true
+  typescript: true
+  tailwind: false
+  design_system_spec: true
+plugins: []
+agents:
+  - claude
+  - codex

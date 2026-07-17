@@ -1,0 +1,8 @@
+format_version: 1
+name: Legacy fixture
+product_type: portal
+surfaces: app
+dominant_patterns:
+  - documents
+density: medium
+accessibility: wcag-aa

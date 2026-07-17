@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://design-frontier.dev/schemas/manifest.schema.json",
+  "title": "Design Frontier generated artifact manifest",
+  "type": "object",
+  "required": ["format_version", "package_version", "generated_at", "files"],
+  "properties": {
+    "format_version": { "const": 2 },
+    "package_version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "files": { "type": "object", "additionalProperties": { "type": "string", "pattern": "^[a-f0-9]{64}$" } }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,24 @@
+name: Bug report
+description: Report unexpected CLI, generator or validator behavior.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction
+      description: Include commands, input YAML and output where possible.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Design Frontier version
+    validations:
+      required: true

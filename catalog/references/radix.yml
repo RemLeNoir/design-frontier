@@ -1,0 +1,45 @@
+id: radix
+name: Radix Primitives
+kind: framework
+status: reviewed
+official_design_system: false
+last_reviewed: '2026-07-16'
+summary: Accessible unstyled interaction primitives for overlays, menus, selection controls and composite widgets.
+covers_layers:
+  forms: 0.78
+  feedback: 0.78
+  accessibility: 0.96
+  navigation: 0.66
+recommended_for:
+- developer-tool
+- saas-operational-dense
+- design-system-foundation
+avoid_for:
+- teams-expecting-finished-visual-design
+boundaries:
+- Radix supplies behavior, not a finished visual language.
+- Project tokens and component anatomy must still be defined.
+- Do not assume accessible primitives remove the need for product-level testing.
+evidence:
+- title: Radix Primitives
+  url: https://www.radix-ui.com/primitives
+  type: primary
+recipes:
+  forms:
+    requirements:
+    - Apply Radix Primitives only within the forms layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.
+  feedback:
+    requirements:
+    - Apply Radix Primitives only within the feedback layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.
+  accessibility:
+    requirements:
+    - Apply Radix Primitives only within the accessibility layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.

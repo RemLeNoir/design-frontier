@@ -1,0 +1,30 @@
+id: developer-tool
+name: Developer tool
+description: Technical product combining application workflows, code, logs and documentation.
+defaults:
+  density: medium-high
+  navigation: persistent-sidebar
+  surfaces: app-and-landing
+  references:
+    application_shell: linear
+    navigation: linear
+    documentation: stripe
+    forms: stripe
+    marketing_site: stripe
+  theme: light
+  device_priority: desktop
+requirements:
+- copyable code and commands
+- clear environment and status context
+- keyboard-friendly workflows
+- readable monospace usage
+prohibitions:
+- monospace for ordinary body content
+- decorative terminal motifs that reduce readability
+signals:
+- developer
+- api
+- code
+- sdk
+- cli
+- repository

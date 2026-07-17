@@ -1,0 +1,32 @@
+id: saas-operational-dense
+name: Dense operational SaaS
+description: Daily-use B2B application with tables, filters, queues, bulk actions
+  and expert users.
+defaults:
+  density: high
+  navigation: persistent-sidebar
+  surfaces: app
+  references:
+    application_shell: metronic
+    navigation: linear
+    tables: airtable
+    forms: carbon
+    feedback: polaris
+  theme: light
+  device_priority: desktop
+requirements:
+- comparison-friendly tables
+- keyboard and focus support
+- explicit bulk-action state
+- compact but readable spacing
+prohibitions:
+- oversized KPI cards with little information
+- marketing typography inside operational screens
+signals:
+- saas
+- operations
+- backoffice
+- workflow
+- tables
+- filters
+- queues

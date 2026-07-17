@@ -1,0 +1,63 @@
+format_version: 2
+name: Frontier Ops
+product_type: b2b-saas
+users: Operations teams handling repeated, data-heavy work
+goals:
+  - find records quickly
+  - complete workflows without losing context
+  - understand status and exceptions
+surfaces: app-and-landing
+dominant_patterns:
+  - tables
+  - filters
+  - forms
+  - dashboards
+density: medium-high
+accessibility: wcag-aa
+theme: both
+device_priority: desktop
+locales:
+  - en
+  - es
+navigation: collapsible sidebar
+stack: {}
+brand:
+  primary: "#3157D5"
+  secondary: "#0F9F8F"
+constraints:
+  must:
+    - Keep primary actions visible in repeated workflows.
+  must_not:
+    - Do not turn every section into a card.
+    - Do not use marketing display sizes inside operational tables.
+reference_overrides:
+  application_shell:
+    primary: metronic
+    weight: 0.75
+  navigation:
+    primary: linear
+    weight: 0.75
+  tables:
+    primary: airtable
+    secondary: carbon
+    weight: 0.85
+  forms:
+    primary: stripe
+    secondary: govuk
+    weight: 0.75
+  marketing_site:
+    primary: apple
+    secondary: stripe
+    weight: 0.55
+outputs:
+  css: true
+  typescript: true
+  tailwind: true
+  design_system_spec: true
+plugins: []
+agents:
+  - claude
+  - codex
+  - gemini
+  - cursor
+  - copilot

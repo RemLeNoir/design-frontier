@@ -1,0 +1,48 @@
+id: atlassian
+name: Atlassian Design System
+kind: design-system
+status: reviewed
+official_design_system: true
+last_reviewed: '2026-07-16'
+summary: Work-management navigation, forms, feedback and structured content for collaborative enterprise products.
+covers_layers:
+  application_shell: 0.8
+  navigation: 0.9
+  forms: 0.82
+  tables: 0.76
+  feedback: 0.9
+  accessibility: 0.82
+recommended_for:
+- saas-operational-dense
+- crm-commercial
+- content-management
+avoid_for:
+- minimal-consumer-app
+- cinematic-marketing
+boundaries:
+- Do not reproduce Atlassian product vocabulary.
+- Use the system as behavioral evidence, not as a reason to combine every component family.
+- Complex navigation requires a real product hierarchy.
+evidence:
+- title: Atlassian Design System
+  url: https://atlassian.design/
+  type: primary
+recipes:
+  application_shell:
+    requirements:
+    - Apply Atlassian Design System only within the application shell layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.
+  navigation:
+    requirements:
+    - Apply Atlassian Design System only within the navigation layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.
+  forms:
+    requirements:
+    - Apply Atlassian Design System only within the forms layer.
+    - Document any local variant before reuse.
+    prohibitions:
+    - Do not copy proprietary assets or brand identifiers.
