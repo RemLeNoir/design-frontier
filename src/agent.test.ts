@@ -10,7 +10,7 @@ it('installs all adapters without destroying existing instructions', async () =>
   const dir = await mkdtemp(path.join(os.tmpdir(), 'design-frontier-agent-'));
   await writeFile(path.join(dir, 'AGENTS.md'), '# Existing instructions\n');
   const installed = await installAgentAdapters(dir, 'all', makeProject());
-  expect(installed).toContain(path.join('.claude', 'skills', 'design-frontier'));
+  expect(installed).toContain('.claude/skills/design-frontier');
   expect(await pathExists(path.join(dir, '.claude', 'skills', 'design-frontier', 'SKILL.md'))).toBe(true);
   expect(await pathExists(path.join(dir, '.agents', 'skills', 'design-frontier', 'SKILL.md'))).toBe(true);
   expect(await pathExists(path.join(dir, '.cursor', 'rules', 'design-frontier.mdc'))).toBe(true);
